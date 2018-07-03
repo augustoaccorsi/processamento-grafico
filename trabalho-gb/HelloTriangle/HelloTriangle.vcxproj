@@ -22,7 +22,7 @@
     <ProjectGuid>{D2B58B13-1820-4401-A763-AEDAFD3BFD47}</ProjectGuid>
     <RootNamespace>HelloTriangle</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
-    <ProjectName>Transforms</ProjectName>
+    <ProjectName>Trabaho GB</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -69,13 +69,13 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>../../dependencies/GLAD/include;../../dependencies/GLFW-3.1.2-lib/include;../../dependencies/GLEW-2.0.0-lib/include;../../dependencies/glm;../../dependencies/GLEW-2.0.0-lib/include/lib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../dependencies/GLAD/include;../../dependencies/GLFW-3.1.2-lib/include;../../dependencies/GLEW-2.0.0-lib/include;../../dependencies/glm</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>../../dependencies/GLFW-3.1.2-lib/lib;../../dependencies/GLEW-2.0.0-lib/lib</AdditionalLibraryDirectories>
@@ -116,12 +116,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Character.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="stb_image.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="Constants.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="stb_image.h" />
